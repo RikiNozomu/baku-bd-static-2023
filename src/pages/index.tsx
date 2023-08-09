@@ -46,46 +46,53 @@ export default function Page() {
 
   const banners = [
     {
+      id: "dee279c3-351e-46a2-b20b-77315dcfade0",
+      name: "baku-voice-pack",
+      url: "	https://shop.realic.net/products/2023-bakus-birthday-voice-pack",
+      imgURL: "/img/banner/20230809140056-8f8f5e75-3f69-4daf-9894-16205c7efd5c.png",
+      order: 1
+    },
+    {
       id: "aa5dfb0e-64e3-4c28-8d85-a66672d5dcc1",
       name: "baku-live",
       url: "https://www.youtube.com/watch?v=HLhFqdDP2Dc",
       imgURL: "/img/banner/20230808184450-17682c2b-8c3e-4111-a047-0beb7fc945d4.jpeg",
-      order: 1
+      order: 2
     },
     {
       id: "dee279c3-351e-46a2-b20b-77315dcfade0",
       name: "#กินไก่กินฝัน",
       url: "https://twitter.com/search?q=%23%E0%B8%81%E0%B8%B4%E0%B8%99%E0%B9%84%E0%B8%81%E0%B9%88%E0%B8%81%E0%B8%B4%E0%B8%99%E0%B8%9D%E0%B8%B1%E0%B8%99",
       imgURL: "/img/banner/20230807150850-18a3b265-5351-40e0-a0df-992d3bd6d0b8.png",
-      order: 2
+      order: 3
     },
     {
       id: "b9e5882d-67b5-4a05-bbaa-3a71557b4077",
       name: "follow-baku",
       url: "https://www.youtube.com/@Baku_ARP",
       imgURL: "/img/banner/20230726021134-165d3268-14f1-4791-9d2e-f172ecc0de45.jpeg",
-      order: 3
+      order: 4
     },
     {
       id: "e1a8437e-5eff-4f76-b0d4-4f40d274f199",
       name: "HBD",
       url: null,
       imgURL: "/img/banner/20230728134429-593e3436-1fb4-44df-bb59-6050a28af6d5.png",
-      order: 4
+      order: 5
     },
     {
       id: "aa90961a-cfb0-422c-b7ea-50474a71235e",
       name: "cafe-project",
       url: "https://twitter.com/Dreamerism89/status/1678434817464213504",
       imgURL: "/img/banner/20230726021035-26ce881e-3bf5-4f37-91d1-b87fb94cd8ba.jpeg",
-      order: 5
+      order: 6
     },
     {
       id: "5fae0719-5365-4baa-bc3e-4a8cbe5cb7e4",
       name: "menu",
       url: "https://twitter.com/Dreamerism89/status/1682369217700708353",
       imgURL: "/img/banner/20230726021102-06402db1-af7f-402e-8cc1-011f7123d012.jpeg",
-      order: 6
+      order: 7
     }
   ]
 
