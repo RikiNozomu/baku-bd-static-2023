@@ -34,6 +34,7 @@ const alegreya = Alegreya_Sans_SC({ weight : '400', subsets : ['latin'] })
 
 export default function Page() {
   const [lastSwap, setLastSwap] = useState<DateTime>(DateTime.now())
+  const [now, setNow] = useState<DateTime>(DateTime.now())
   const [openEye, setOpenEye] = useState(true)
   const pageSize = 10
   const swapTime = 5
@@ -63,7 +64,7 @@ export default function Page() {
       name: "follow-baku",
       url: "https://www.youtube.com/@Baku_ARP",
       imgURL: "/img/banner/20230726021134-165d3268-14f1-4791-9d2e-f172ecc0de45.jpeg",
-      order: 4
+      order: 3
     },
     {
       id: "e1a8437e-5eff-4f76-b0d4-4f40d274f199",
@@ -77,14 +78,14 @@ export default function Page() {
       name: "cafe-project",
       url: "https://twitter.com/Dreamerism89/status/1678434817464213504",
       imgURL: "/img/banner/20230726021035-26ce881e-3bf5-4f37-91d1-b87fb94cd8ba.jpeg",
-      order: 6
+      order: 5
     },
     {
       id: "5fae0719-5365-4baa-bc3e-4a8cbe5cb7e4",
       name: "menu",
       url: "https://twitter.com/Dreamerism89/status/1682369217700708353",
       imgURL: "/img/banner/20230726021102-06402db1-af7f-402e-8cc1-011f7123d012.jpeg",
-      order: 7
+      order: 6
     }
   ]
 
@@ -98,12 +99,8 @@ export default function Page() {
   useEffect(() => {
     // Update Every Second
     const interval = setInterval(() => {
-      if(lastSwap.diffNow(['seconds']).seconds < (swapTime*-1)){
-        setOpenEye(!openEye)
-      }
+      setNow(DateTime.now())
     }, 1000)
-
-    
 
     window.addEventListener("resize", handleResize);
     handleResize()
@@ -119,6 +116,13 @@ export default function Page() {
   useEffect(()=>{
     setLastSwap(DateTime.now())
   }, [openEye])
+
+  useEffect(()=>{
+    if(lastSwap.diffNow(['seconds']).seconds < (swapTime*-1)){
+      setOpenEye(!openEye)
+    }
+  }, [now])
+  
 
   const swiperRef = useRef<SwiperClass | null>(null);
 
