@@ -48,7 +48,7 @@ export default function Page() {
     {
       id: "dee279c3-351e-46a2-b20b-77315dcfade0",
       name: "baku-voice-pack",
-      url: "	https://shop.realic.net/products/2023-bakus-birthday-voice-pack",
+      url: "https://shop.realic.net/products/2023-bakus-birthday-voice-pack",
       imgURL: "/img/banner/20230809140056-8f8f5e75-3f69-4daf-9894-16205c7efd5c.png",
       order: 1
     },
