@@ -1,5 +1,6 @@
 # Baku Birthday 2023 : Website Project
 ![](public/img/page.png)
+![](public/img/stat.png)
 
 Website for post a wish well to [Baku](https://www.youtube.com/channel/UCO6R8Pc5g2R7ObJQPBGppdg "Baku"), Thai Vtirtual Youtuber from [Algorhythm Project](https://algorhythm.realic.net/ "Algorhythm Project")
 
